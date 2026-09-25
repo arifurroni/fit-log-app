@@ -1,12 +1,9 @@
 import { IType } from "@/types/type";
 import React from "react";
 import ExerciseCard from "../shared/ExerciseCard";
+import { GetAllData } from "@/lib/dataFetch";
 
-const GetAllData = async () => {
-  const response = await fetch("http://localhost:3000/data.json");
-  const data = await response.json();
-  return data;
-};
+
 
 const LibraryPage = async () => {
   const data = await GetAllData();

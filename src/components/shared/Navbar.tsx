@@ -5,26 +5,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
     return (
-        // <div className="bg-[#0C0D10]">
-        //     <nav className="p-4 container mx-auto flex items-center justify-between">
-        //         <div>
-        //             <Link href="/" className="flex items-center gap-2">
-        //             <Image src={logo} alt="Logo" />
-        //             <h2 className='text-white'>FITLOG</h2>
-        //             </Link>
-        //         </div>
 
-        //         <div className="flex items-center gap-4">
-        //             <Link href="/workouts" className="text-[#C2F800] hover:bg-[#1A2312] hover:text-green-500 transition-colors hover:py-2 hover:px-4 hover:rounded-2xl">Workouts</Link>
-        //             <Link href="/plans" className="text-[#C2F800] hover:bg-[#1A2312] hover:text-green-500 transition-colors hover:py-2 hover:px-4 hover:rounded-2xl">My Plan</Link>
-        //         </div>
-
-        //         <div className="flex items-center gap-4 text-gray-200">
-        //             <button>Plan <span></span></button>
-        //             <button>Saved <span></span></button>
-        //         </div>
-        //     </nav>
-        // </div>
 
         <div className="navbar bg-black shadow-sm shadow-gray-200 flex items-center justify-between px-4 py-2">
             <div className="navbar-start">

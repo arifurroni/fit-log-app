@@ -73,7 +73,7 @@ const ExerciseCard = ({ exercise }: ExerciseCardProps) => {
 
         </div>
 
-        <button>View Details</button>
+        <button className="bg-[#b6f500] w-full hover:cursor-pointer text-black rounded-2xl mt-5">View Details</button>
       </div>
     </div>
   );
