@@ -72,6 +72,8 @@ const ExerciseCard = ({ exercise }: ExerciseCardProps) => {
           </div>
 
         </div>
+
+        <button>View Details</button>
       </div>
     </div>
   );

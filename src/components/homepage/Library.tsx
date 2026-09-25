@@ -12,7 +12,7 @@ const LibraryPage = async () => {
   const data = await GetAllData();
 
   return (
-    <div className="my-20">
+    <div className="my-20 mx-5">
       {/* Header */}
       <div className="mx-auto space-y-3">
         <h1 className="text-4xl font-bold">THE LIBRARY</h1>
@@ -22,7 +22,7 @@ const LibraryPage = async () => {
       </div>
 
       {/* Cards */}
-      <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 mx-5 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {data.map((exercise: IType) => (
           <ExerciseCard key={exercise.id} exercise={exercise} />
         ))}
