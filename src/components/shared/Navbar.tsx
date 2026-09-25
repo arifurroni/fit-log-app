@@ -49,8 +49,8 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><Link href="/workouts">Workouts</Link></li>
-                    <li><Link href="/plans">My Plan</Link></li>
+                    <li><Link href="/workouts" className='hover:text-lime-400'>Workouts</Link></li>
+                    <li><Link href="/plans" className='hover:text-lime-400'>My Plan</Link></li>
                 </ul>
             </div>
             <div className="flex items-center gap-5 text-gray-200">
