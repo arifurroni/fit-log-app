@@ -36,7 +36,7 @@ const Navbar = () => {
             </div>
             <div className="flex items-center gap-5 text-gray-200">
                 <button className="flex justify-center items-center gap-2">Plan <div className='h-5 w-5 bg-lime-400 rounded-full flex items-center justify-center text-black'>0</div></button>
-                <button className="flex justify-center items-center gap-2">Saved <div className='h-5 w-5 bg-lime-400 rounded-full flex items-center justify-center text-black'>0</div></button>
+                <button className="flex justify-center items-center gap-2">Saved <div className='h-5 w-5 border border-gray-500 rounded-full flex items-center justify-center text-gray-200'>0</div></button>
             </div>
         </div>
     );
