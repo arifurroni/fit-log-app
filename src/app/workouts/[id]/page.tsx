@@ -2,8 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GetAllData } from "@/lib/dataFetch";
-import { CalendarPlus } from "lucide-react";
+// import { CalendarPlus } from "lucide-react";
 import { Bookmark } from "lucide-react";
+import TodayPlanButton from "@/components/Workouts/TodayPlanButton";
 
 interface WorkoutDetailPageProps {
   params: Promise<{
@@ -146,16 +147,7 @@ const WorkoutDetailPage = async ({
                           </ol>
                       </div>
                         
-                    <Link href="/plans/today" className="mt-4 inline-block rounded-lg bg-lime-400 px-4 py-2 text-black hover:bg-lime-500 mr-2">
-                        <div className="flex items-center gap-2">
-                            <div>
-                                <CalendarPlus size={16} />
-
-                            </div>
-                   
-                        <span>Add to today&apos;s plan</span>
-                        </div>
-                    </Link>
+                    <TodayPlanButton workout={workout} />
 
                     <Link href="/saved" className="mt-2 inline-block rounded-lg bg-zinc-700 px-4 py-2 text-zinc-300 hover:bg-zinc-600 ml-2">
                         <div className="flex items-center gap-2">
