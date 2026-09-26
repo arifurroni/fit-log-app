@@ -4,16 +4,18 @@ import { IType } from '@/types/type';
 import { useContext } from 'react';
 
 import { CalendarPlus } from 'lucide-react';
-import React from 'react';
+// import React from 'react';
 import { WorkoutContext } from '@/context/WorkoutContextProvider';
+import { toast } from 'react-toastify';
 
 const TodayPlanButton = ({workout}: {workout: IType}) => {
     const {todayWorkouts, setTodayWorkouts } = useContext(WorkoutContext);
-    console.log(todayWorkouts, setTodayWorkouts);
+    // console.log(todayWorkouts, setTodayWorkouts);
 
     const handleAddToTodayPlan = () => {
-        console.log("Add to today plan button triggered", workout)
+        // console.log("Add to today plan button triggered", workout)
         setTodayWorkouts([...todayWorkouts, workout]);
+        toast.success(`"${workout.name}" added to today's plan`);
     }
 
     return <button className="mt-4 inline-block rounded-lg bg-lime-400 px-4 py-2 text-black hover:bg-lime-500 mr-2 hover:cursor-pointer" onClick={() => handleAddToTodayPlan()}>
