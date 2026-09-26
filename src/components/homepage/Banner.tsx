@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 import bannerImage from '@/assets/banner.png';
+// import Link from 'next/link';
+// import { Link } from 'lucide-react';
 
 const BannerPage = () => {
     return (
@@ -11,7 +13,9 @@ const BannerPage = () => {
             <p className="text-[#9CA3AF]">FitLog is a dark, no-nonsense gym companion: pick a lift, lock it
 into today&apos;s plan, and watch the week&apos;s work add up.</p>
 
-            <button className="bg-lime-400 text-black hover:bg-lime-500 py-2 px-4 rounded-lg w-50">Browse Workouts</button>
+            
+                <a href="#Library" className="inline-block w-50 rounded-lg bg-lime-400 px-4 py-2 text-center text-black hover:bg-lime-500">Browse Workouts</a>
+            
             </div>
 
             <div>

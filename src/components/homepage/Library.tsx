@@ -9,6 +9,7 @@ const LibraryPage = async () => {
   const data = await GetAllData();
 
   return (
+    <section id="Library" className="my-20 scroll-mt-20">
     <div className="my-20 mx-5">
       {/* Header */}
       <div className="mx-auto space-y-3">
@@ -25,6 +26,7 @@ const LibraryPage = async () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 
