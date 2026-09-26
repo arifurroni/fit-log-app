@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Clock3, Flame, Star } from "lucide-react";
 import { IType } from "@/types/type";
+import Link from "next/link";
 
 
 interface ExerciseCardProps {
@@ -9,6 +10,11 @@ interface ExerciseCardProps {
 
 const ExerciseCard = ({ exercise }: ExerciseCardProps) => {
   return (
+
+    <Link
+      href={`/workouts/${exercise.id}`}
+      className="group block w-full overflow-hidden rounded-2xl border border-zinc-800 bg-[#15161b] text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:border-lime-400 hover:shadow-xl"
+    >
     <div className="w-full max-w-95 overflow-hidden rounded-2xl border border-zinc-800 bg-[#15161b] text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
       
       {/* Image */}
@@ -73,9 +79,10 @@ const ExerciseCard = ({ exercise }: ExerciseCardProps) => {
 
         </div>
 
-        <button className="bg-[#b6f500] w-full hover:cursor-pointer text-black rounded-2xl mt-5">View Details</button>
+        {/* <button className="bg-[#b6f500] w-full hover:cursor-pointer text-black rounded-2xl mt-5">View Details</button> */}
       </div>
     </div>
+    </Link>
   );
 };
 

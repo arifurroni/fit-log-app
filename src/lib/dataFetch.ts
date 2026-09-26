@@ -1,6 +1,9 @@
 
 export const GetAllData = async () => {
   const response = await fetch("http://localhost:3000/data.json");
-  const data = await response.json();
-  return data;
+  if (!response.ok) {
+    throw new Error("Failed to fetch workout data");
+  }
+
+  return response.json();
 };
