@@ -1,9 +1,12 @@
 
 export const GetAllData = async () => {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/data.json`);
-  if (!response.ok) {
-    throw new Error("Failed to fetch workout data");
-  }
 
-  return response.json();
+  try {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/data.json`);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching workout data:", error);
+    return []; 
+  }
 };
