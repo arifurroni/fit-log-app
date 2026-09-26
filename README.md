@@ -1,9 +1,8 @@
-Project name:
 # Fit Log App
 
 ---
 
-Short description:
+
 **Fit Log App** is a simple fitness tracking application designed to help users record and monitor their daily workouts and fitness activities. It allows users to keep track of exercises, workout progress, and personal fitness goals in an organized way.
 
 ## Features
@@ -22,7 +21,6 @@ Short description:
 ---
 
 
-Technologies used:
 ## ⚙️ Technology
 - Next.js
 - Tailwind CSS, DaisyUI
@@ -35,15 +33,23 @@ Technologies used:
 
 
 
-5 key features of the project:
 
-### 📱 Fully Responsive Design
+## 🚀 Key Features
 
-The website is designed to work smoothly across:
+1. **Comprehensive Workout Library**
+   - Explore exercises for major muscle groups with detailed workout information.
 
-- 💻 Desktop
-- 📱 Mobile
-- 📟 Tablet
+2. **Detailed Workout Pages**
+   - View exercise duration, calories, sets, reps, equipment, difficulty, ratings, and instructions.
+
+3. **Responsive User Interface**
+   - Fully responsive workout cards and pages optimized for mobile, tablet, and desktop devices.
+
+4. **Today's Workout Plan**
+   - Add exercises to your daily plan to organize and track planned workouts.
+
+5. **Save Workouts for Later**
+   - Bookmark favorite exercises and access them again whenever needed.
 
 
 ---
